@@ -44,7 +44,7 @@
 </template>
 
 <script>
-//import axios from 'axios';
+import axios from 'axios';
 
 export default {
     name: 'AppListPlanets',
@@ -73,19 +73,18 @@ export default {
     },
     mounted() {
         for (let i = 1; i < 7; i++) {
-            // axios.get(`https://swapi.dev/api/planets/?page=${i}`)
-            //     .then(response => {
-            //         response.data.results.forEach(item => {
-            //             this.planets.push(item)
-            //         })
-            //         this.planetsSaved = this.planets;
-            //     })
+            axios.get(`https://swapi.dev/api/planets/?page=${i}`)
+                .then(response => {
+                    response.data.results.forEach(item => {
+                        this.planets.push(item)
+                    })
+                    this.planetsSaved = this.planets;
+                })
         }
     }
 }
 </script>
 
 <style scoped >
-
 </style>
 
