@@ -1,25 +1,25 @@
 <template>
-  <AppNavbar/>
-  <!-- <HomeView/> -->
+    <AppNavbar />
+    <HomeView />
 </template>
 
 <script>
 import AppNavbar from './components/AppNavbar.vue';
-// import HomeView from './views/HomeView.vue';
+import HomeView from './views/HomeView.vue';
 
 export default {
-  name: 'App',
-  components: {
-    AppNavbar
-    // HomeView
+    name: 'App',
+    components: {
+        AppNavbar,
+        HomeView
 
-}
+    }
 }
 </script>
 
 <style>
 nav a.router-link-exact-active {
-  color: #5E95B7;
+    color: #5E95B7;
 }
 
 /* You can add global styles to this file, and also import other style files */
