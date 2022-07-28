@@ -1,18 +1,20 @@
 <template>
     <AppNavbar />
-    <HomeView />
+       
+    <!-- <HomeView /> -->
 </template>
 
 <script>
 import AppNavbar from './components/AppNavbar.vue';
-import HomeView from './views/HomeView.vue';
+//import HomeView from './views/HomeView.vue';
+//import IndexShowPlanetsView from './views/IndexShowPlanetsView.vue';
 
 export default {
     name: 'App',
     components: {
         AppNavbar,
-        HomeView
-
+        // HomeView,
+        // IndexShowPlanetsView
     }
 }
 </script>

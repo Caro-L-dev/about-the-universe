@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
-import IndexShowPlanetsView from '../views/IndexShowPlanetsView';
+import PresentationPlanet from '../views/PresentationPlanet.vue'
 
 const routes = [
   {
@@ -9,10 +9,11 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/index-show-planets',
-    name: 'index-show-planets',
-    component: IndexShowPlanetsView
+    path: '/planets',
+    name: 'PresentationPlanet',
+    component: PresentationPlanet
   }
+
 ];
 
 const router = createRouter({

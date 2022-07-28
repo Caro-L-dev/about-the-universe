@@ -30,10 +30,11 @@ export default {
     </nav>
   </div>
   <nav class="vertical-navbar">
-    <a routerLink="/index-show-planets" routerLinkActive="active" class="nav-vertical-link">
+    <router-link to="/planets">
       <span class="fas fa-globe fa-3x"></span>
       <p>Planètes</p>
-    </a>
+    </router-link>
+      
     <a routerLink="/index-show-vehicles" routerLinkActive="active" class="nav-vertical-link">
       <span class="fas fa-rocket fa-3x"></span>
       <p>Véhicules</p>
@@ -43,4 +44,5 @@ export default {
       <p>Personnes</p>
     </a>
   </nav>
+  <router-view ></router-view> 
 </template>
